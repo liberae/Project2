@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project2.MainActivity">
+
+    <ImageView
+        android:id="@+id/mainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mk" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetHP"
+        android:text="Next round" />
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainScreen"
+        android:background="@drawable/mklogo"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subzero_hp"
+                style="@style/hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center"
+                android:text="100" />
+
+            <Button
+                android:id="@+id/subzeroPunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="minusTenHPRaiden"
+                android:text="punch"
+                android:layout_marginBottom="@dimen/bottom_margin"/>
+
+            <Button
+                android:id="@+id/subzeroKick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="minusFifteenHPRaiden"
+                android:text="kick"
+                android:layout_marginBottom="@dimen/bottom_margin"/>
+
+            <Button
+                android:id="@+id/subzeroSuper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="minusFiveDamageRaiden"
+                android:text="super" />
+
+            <TextView
+                android:id="@+id/subzeroStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/raiden_HP"
+                style="@style/hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
+                android:layout_marginTop="@dimen/top_margin"
+                android:gravity="center"
+                android:text="100"
+                android:textAlignment="gravity" />
+
+            <Button
+                android:id="@+id/raidenPunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="minusTenHPSubzero"
+                android:text="punch"
+                android:layout_marginBottom="@dimen/bottom_margin"/>
+
+            <Button
+                android:id="@+id/raidenKick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="minusFifteenHPSubzero"
+                android:text="kick"
+                android:layout_marginBottom="@dimen/bottom_margin"/>
+
+            <Button
+                android:id="@+id/raidenSuper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="super" />
+
+            <TextView
+                android:id="@+id/raiDenStatus"
+                style="@style/special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
