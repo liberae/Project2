@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         if (raidenHP < 0) {
             raidenHP = 0;
         }
-        if (raidenHP == 0)
             subzeroWinningScreen();
         displayHPRaiden(raidenHP);
     }
@@ -95,9 +94,9 @@ public class MainActivity extends AppCompatActivity {
         if (subzeroHP < 0) {
             subzeroHP = 0;
         }
-        if (subzeroHP == 0) {
-            raidenWinningScreen();
-        }
+
+        raidenWinningScreen();
+
         displayHPSubzero(subzeroHP);
     }
 
@@ -148,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //method to display status "weakened" when super button is pressed
+    //method to display status "Frozen" when super button is pressed
     public void displayStatus(String status) {
         TextView statusView = (TextView) findViewById(R.id.raiDenStatus);
         statusView.setText(String.valueOf(status));

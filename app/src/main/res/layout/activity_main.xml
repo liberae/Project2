@@ -51,17 +51,17 @@
                 android:id="@+id/subzeroPunch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
                 android:onClick="minusTenHPRaiden"
-                android:text="punch"
-                android:layout_marginBottom="@dimen/bottom_margin"/>
+                android:text="punch" />
 
             <Button
                 android:id="@+id/subzeroKick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
                 android:onClick="minusFifteenHPRaiden"
-                android:text="kick"
-                android:layout_marginBottom="@dimen/bottom_margin"/>
+                android:text="kick" />
 
             <Button
                 android:id="@+id/subzeroSuper"
@@ -102,17 +102,17 @@
                 android:id="@+id/raidenPunch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
                 android:onClick="minusTenHPSubzero"
-                android:text="punch"
-                android:layout_marginBottom="@dimen/bottom_margin"/>
+                android:text="punch" />
 
             <Button
                 android:id="@+id/raidenKick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_margin"
                 android:onClick="minusFifteenHPSubzero"
-                android:text="kick"
-                android:layout_marginBottom="@dimen/bottom_margin"/>
+                android:text="kick" />
 
             <Button
                 android:id="@+id/raidenSuper"
